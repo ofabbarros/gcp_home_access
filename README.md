@@ -3,12 +3,9 @@
 ### Propósito
 Este script foi criado para agilizar a atualização do novo IP dinâmico nas regras de firewall no GCP quando estou trabalhando de casa
 
-### Requerimentos em ambiente Ubuntu
-| Packages | Info | Referência |
+### Referencias
+|   | Info | Referência |
 | ------ | ------ | ------ |
-| NodeJS |  |  |
-| NPM |  |  |
-| request | Pacote NPM |  |
 | @google-cloud/compute | Pacote NPM |
 | gcloud | Linha de comando do GCP no Ubuntu | https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu |
 | Firewall | Configuração de regra de firewall no GCP | https://cloud.google.com/filestore/docs/configuring-firewall?hl=pt-br |
@@ -27,7 +24,6 @@ $ cd gcp_home_access
 ```sh
 $ sudo apt update
 $ sudo apt install -Y nodejs npm
-$ npm install request --save
 $ npm install --save @google-cloud/compute
 ```
 - Crie uma regra de firewall no GCP chamada `homeaccess`
